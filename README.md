@@ -6,15 +6,16 @@ Three primary solutions have been explored:
 
 - llamacpp python web server: https://github.com/abetlen/llama-cpp-python/tree/main#web-server
   <p align="center">
-  <img width="700" alt="llamacpp_tgi" src="">
+  <img width="700" alt="llamacpp_tgi" src="https://github.com/sarapiscitelli/llms-inference/assets/104431794/c8576007-ce54-4494-90e0-796f0afbbd5d">
   </p>
 - huggingface text generation inference server: https://github.com/huggingface/text-generation-inference
   <p align="center">
-  <img width="700" alt="hf_tgi" src="">
+  <img width="700" alt="hf_tgi" src="https://github.com/sarapiscitelli/llms-inference/assets/104431794/c7466883-0041-4e61-926b-d7de59c34fd6">
   </p>
 - A simple server implemented at https://github.com/sarapiscitelli/llms-inference/blob/main/lm-tgi-servers/local/simple_tgi/app.py to allow inference of models from HuggingFace. In this case, inference is not optimized.
+
   <p align="center">
-  <img width="700" alt="simple_tgi" src="">
+  <img width="700" alt="simple_tgi" src="https://github.com/sarapiscitelli/llms-inference/assets/104431794/ce697f84-5eee-4805-9f7b-d31cefaa9b4f">
   </p>
 In all cases, uvicorn servers are used, exposing the model through APIs via FastAPI.   
 Therefore, after running the server, you can find the OpenAPI definitions by navigating to the following link: http://localhost:8080/docs.
